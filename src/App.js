@@ -11,9 +11,14 @@ function App () {
     const options = [
         { label: 'Red', value: 'red'},
         { label: 'Green', value: 'green'},
-        { label: 'Blue', value: 'blue'}
+        { label: 'Blue', value: 'blue'},
+        { label: 'Pink', value: 'pink'},
+        { label: 'Yellow', value: 'yellow'},
+        { label: 'Indigo', value: 'indigo'},
+        { label: 'Orange', value: 'orange'},
+        { label: 'Purple', value: 'purple'}
     ]
-    return <Dropdown selection={selection} onSelect={handleSelect} options={options}/>;
+    return <Dropdown value={selection} onChange={handleSelect} options={options}/>;
 }
 
 export default App;
